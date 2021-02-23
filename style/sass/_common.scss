@@ -1,0 +1,286 @@
+$button-padding:12px 18px;
+$main-button-bg-color: #3C64B1;
+$main-color-logo-and-subtitle: #3C64B1;
+$second-button-border: 1px solid #3C64B1;
+$color-linkandtitle:#373F41;
+$description-color:#737B7D;
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+a 
+  {
+    text-decoration: none;
+  }
+
+a:hover 
+  {
+    text-decoration:none; 
+    cursor:pointer;  
+  }
+  button
+  {
+    cursor: pointer;
+  }
+input,button,button:hover,input:hover,input:active
+  { 
+    border:none; 
+  } 
+  input:active, input:hover, input:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+button:active, button:focus 
+  {
+    outline: none;
+  }
+button::-moz-focus-inner 
+  {
+    border: 0;
+  }
+@font-face {
+  font-family: Open-Sans;
+  src: url(../fonts/OpenSans-Regular.ttf); 
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../fonts/Roboto-Regular.ttf"),
+ 
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto-Bold.ttf),
+  url("../fonts/roboto/Roboto-Bold.eot") format("eot"),
+  url("../fonts/Roboto-Bold.ttf") format("truetype"), 
+  url("../fonts/roboto/Roboto-Bold.woff") format("woff"); 
+}
+ 
+/*Inter-Regular 400*/
+@font-face {
+  font-family: Inter-Regular;
+  src: url(../fonts/Inter-Regular.ttf),
+  url("../fonts/inter/Inter-Regular.eot") format("eot"),
+  url("../fonts/Inter-Regular.ttf") format("truetype"), 
+  url("../fonts/inter/Inter-Regular.woff") format("woff"),
+  url("../fonts/inter/Inter-Regular.woff2") format("woff2");
+}
+/*Inter-Regular 400*/
+/*Inter-Regular 600*/
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url(../fonts/Inter-SemiBold.ttf),
+  url("../fonts/inter/Inter-SemiBold.eot") format("eot"),
+  url("../fonts/Inter-SemiBold.ttf") format("truetype"), 
+  url("../fonts/inter/Inter-SemiBold.woff") format("woff"),
+  url("../fonts/inter/Inter-SemiBold.woff") format("woff2");
+}
+/*Inter-Regular 600*/
+/*Inter-Regular 700*/
+@font-face {
+  font-family: Inter-Bold;
+  src: url(../fonts/Inter-Bold.ttf),
+    url("../fonts/inter/Inter-Bold.eot") format("eot"),
+  url("../fonts/Inter-Bold.ttf") format("truetype"), 
+  url("../fonts/inter/Inter-Bold.woff") format("woff"),
+  url("../fonts/inter/Inter-Bold.woff2") format("woff2");
+}
+/*Inter-Regular 700*/
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat-Bold.ttf),
+  url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff"),
+  url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2");
+
+}
+.header__body-title,
+.sender-body__title,
+.aplication-body__title,
+.associate-body__title
+{
+  font-family: Inter-Bold;
+}
+.header__body-descrittion,
+.sender-body__item-text,
+.aplication-body__description,
+.associate-body__description,
+.footer-body__description
+{
+  font-family: Inter-Regular;
+}
+.container
+{
+  width: 100%;
+  margin: 0 auto;
+}
+.section
+{
+  width: 1110px;
+  margin: 0 auto;
+}
+.logo
+{
+  display: flex;
+  width: 158px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+ .logo__title
+ {
+  font-family: Roboto-Bold;
+  font-size: 24px;
+  line-height: 21.5px;
+  text-transform: uppercase;
+  width: 103px;
+ }
+ .logo__img
+ {
+  width: 52px;
+  height: 52px;
+ }
+ .main-button
+ {
+  padding: $button-padding;
+  background-color: $main-button-bg-color;
+  color:#ffffff;
+ }
+ .second-button, .second-button:hover
+ {
+  padding: $button-padding;
+  border:$second-button-border;
+  color: $main-color-logo-and-subtitle;
+ background-color: transparent;
+ }
+ .second-button
+ {
+  transition: all 0.5s;
+ }
+.second-button:hover
+{
+  background-color: #3C64B1;
+  color: #ffffff;
+}
+.menu-items__list-link, 
+.menu-items__list-number,
+.header__body-descrittion,
+.sender-body__title
+ {
+  color:$color-linkandtitle;
+ }
+.menu-items__list-button,
+.main-button,
+.second-button,
+.sender-body__info-circle
+{
+  font-family: Montserrat-Bold;
+}
+.header__second-button,
+.aplication-body__main-button 
+{
+  width: 177px;
+}
+.aplication-body__second-button
+{
+  width: 182px;
+}
+.menu-items__list-button,
+.main-button,
+.second-button
+{
+  height: 42px;
+}
+.menu-items__list-button
+{
+  width: 99px;
+}
+.menu-items__list-link,
+.sub-menu__link,
+.sender-body__item-text,
+.sender-body__info-title,
+.associate-body__description,
+.footer-body__description
+{
+ font-family: Inter-Regular;
+}
+.header__body-title-subtitle,.logo__title
+ 
+{
+  color: $main-color-logo-and-subtitle;
+}
+.sender-body__item
+{
+  display: flex;
+  flex-direction: column;
+}
+.sender-body__item-img
+{
+  width: 55px;
+  height: 55px;
+}
+.header__body-descrittion,
+.sender-body__item-text,
+.associate-body__description,
+.footer-body__description
+{
+  color :$description-color;
+}
+.sender-body__form-title
+{
+  font-family: Inter-SemiBold;
+
+}
+.sender-form__label,.input
+{
+  font-family: Inter-Regular;
+}
+/*.aplication-body__description
+{
+   font-family: Open-Sans;
+}*/
+.sub-menu__items
+{
+  visibility: hidden;
+  opacity: 0;
+ /* opacity: 1;
+  visibility: visible;*/
+  transition: 0.4s linear;
+}
+.menu-items__list-link-body
+{
+    transition: 0.4s linear;
+}
+
+.menu-items__list-link-body:hover .list-link__sub-menu .sub-menu__items
+{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s linear;
+}
+.sub-menu__items:hover
+{
+  visibility: visible;
+  opacity: 1;
+  transition: 0.4s linear;
+}
+.header__body-title,
+.associate-body__title,
+.aplication-body__title,
+.header__body-title,
+{
+  color: #373F41; 
+}
+.sender-body__form-title
+{
+  color: #060303;
+}
+.header__body-descrittion,
+.aplication-body__description
+{
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  font-family: Inter-Regular;
+}
+  
